@@ -1,2 +1,2 @@
-# part-of-online-shop-on-bootstrap
+# Part of online shop on bootstrap
 my first time on bootstrap
