@@ -1,0 +1,15 @@
+body {
+  font-family: $font-family-main;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-md;
+  background-color: $bg-page;
+
+}
+
+a {
+  text-decoration: none;
+  &:hover{
+    color: $accent-color;
+    transition: $transition ;
+  }
+}

@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Bold"), local("Lato-Bold"), url("../Lato-Bold.woff2") format("woff2"), url("../Lato-Bold.woff") format("woff"), url("../Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Regular"), local("Lato-Regular"), url("../Lato-Regular.woff2") format("woff2"), url("../Lato-Regular.woff") format("woff"), url("../Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2px;
+  font-display: swap;
+}
+:root {
+  --bs-link-color: black;
+}
+
+.navbar {
+  --bs-navbar-brand-margin-end: 45px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #E5E5E5;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #99C63C;
+  transition: 0.5s;
+}
+
+.header__top {
+  background-color: #E5E5E5;
+  padding: 5px 0;
+  font-size: 15px;
+}
+.header__lang-switcher:hover {
+  color: #99C63C;
+  transition: 0.5s;
+}
+.header__lang-switcher .dropdown-item:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px -2px #99C63C;
+}
+.header__lang-switcher .dropdown-item:active {
+  background-color: #99C63C;
+  color: #fff;
+}
+.header__contact-ic, .header__lang-ic {
+  padding-right: 10px;
+}
+.header__search-wrapper {
+  margin-right: 65px;
+}
+.header__search {
+  color: black;
+  font-size: 16px;
+  padding-right: 65px;
+  padding-left: 0;
+}
+.header__search:hover {
+  color: #99C63C;
+  transition: 0.5s;
+}
+
+.modal .form {
+  box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
+  position: relative;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: 30px;
+  transition: border-radius 0.5s ease;
+  background: #E5E5E5;
+}
+.modal .form:before {
+  content: "";
+  position: absolute;
+  background: #99C63C;
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  border-radius: 1px;
+  transition: transform 0.3s ease;
+}
+.modal .form:focus-within {
+  border-radius: 30px;
+}
+.modal .form:focus-within:before {
+  transform: scale(1);
+}
+.modal .form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+.modal .form .input {
+  color: #99C63C;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+.modal .form .input:focus {
+  outline: none;
+}
+.modal .form .input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+.modal .form .reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal .form i {
+  width: 17px;
+  margin-top: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */
