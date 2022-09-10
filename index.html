@@ -76,47 +76,53 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                         <li class="nav-item header__search-wrapper d-flex align-items-center">
                             <a class="nav-link header__search p-0" href="#" data-bs-toggle="modal"
                                data-bs-target="#search-modal">
                                 <i class="bi bi-search"></i>
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link p-0 dropdown-toggle" href="#" role="button" id="productsDropdown"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="#">Products#1</a></li>
+                                <li><a class="dropdown-item" href="#">Products#2</a></li>
+                                <li><a class="dropdown-item" href="#">Products#3</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link p-0 dropdown-toggle" href="#" id="applicationsDropdown" role="button"
+                               data-bs-toggle="dropdown"
                                aria-expanded="false">
-                                Dropdown
+                                Applications
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="applicationsDropdown">
+                                <li><a class="dropdown-item" href="#">Applications#1</a></li>
+                                <li><a class="dropdown-item" href="#">Applications#2</a></li>
+                                <li><a class="dropdown-item" href="#">Applications#3</a></li>
                             </ul>
-
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                               something
+                            <a class="nav-link p-0" href="#">
+                                Documentation
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-
                         </li>
-
-
                     </ul>
+
+                    <div class="d-flex header__auth">
+                        <a class="nav-link header__search p-0" href="#" data-bs-toggle="modal"
+                           data-bs-target="#register-modal">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <a class="nav-link header__search p-0" href="#" data-bs-toggle="modal"
+                           data-bs-target="#search-modal">
+                            <i class="bi bi-cart2"></i>
+                        </a>
+                    </div>
 
                 </div>
             </div>
@@ -140,7 +146,7 @@
                         <i class="bi bi-search"></i>
                     </button>
                     <label for="input-search"></label>
-                    <input class="input" id="input-search" placeholder="Type your text" required="" type="text">
+                    <input class="input-body-search" id="input-search" placeholder="Type your text" required="" type="text">
                     <button class="reset" type="reset">
                         <i class="bi bi-backspace"></i>
                     </button>
@@ -154,6 +160,51 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+<!-- Modal register -->
+<div class="modal fade modal-register" id="register-modal" data-bs-backdrop="static"
+     data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-center modal-register__bg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+                <form class="form card">
+                    <div class="card_header d-flex justify-content-center">
+                        <h1 class="form_heading">Sign in</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                  d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"></path>
+                        </svg>
+                    </div>
+                    <div class="field field-username">
+                        <label for="username"></label>
+                        <input class="input" name="username" type="text" placeholder="Username" id="username">
+                    </div>
+                    <div class="field field-password">
+                        <label for="password"></label>
+                        <input class="input" name="user_password" type="password" placeholder="Password" id="password">
+                    </div>
+                    <div class="field field-button d-flex">
+                        <button class="button-login">Login</button>
+                        <button class="button-reset" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

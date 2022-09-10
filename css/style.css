@@ -19,6 +19,7 @@
 
 .navbar {
   --bs-navbar-brand-margin-end: 45px;
+  --bs-navbar-color: black;
 }
 
 body {
@@ -41,6 +42,9 @@ a:hover {
   padding: 5px 0;
   font-size: 15px;
 }
+.header__contact-ic, .header__lang-ic {
+  padding-right: 10px;
+}
 .header__lang-switcher:hover {
   color: #99C63C;
   transition: 0.5s;
@@ -53,8 +57,9 @@ a:hover {
   background-color: #99C63C;
   color: #fff;
 }
-.header__contact-ic, .header__lang-ic {
-  padding-right: 10px;
+.header__navigation {
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
 }
 .header__search-wrapper {
   margin-right: 65px;
@@ -69,14 +74,25 @@ a:hover {
   color: #99C63C;
   transition: 0.5s;
 }
+.header__navigation .nav-item:not(:first-child):not(:last-child) {
+  margin-right: 30px;
+}
+.header__auth {
+  gap: 16px;
+}
+.header__auth i.bi-cart2 {
+  font-size: 16px;
+}
+.header__auth i.bi-person {
+  font-size: calc(16px * 1.09);
+}
 
 .modal .form {
   box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
   position: relative;
-  width: 400px;
+  width: 90%;
   height: 40px;
   display: flex;
-  align-items: center;
   padding-inline: 0.8em;
   border-radius: 30px;
   transition: border-radius 0.5s ease;
@@ -91,7 +107,7 @@ a:hover {
   width: 100%;
   height: 2px;
   left: 0;
-  bottom: -5px;
+  bottom: -10px;
   border-radius: 1px;
   transition: transform 0.3s ease;
 }
@@ -106,7 +122,7 @@ a:hover {
   background: none;
   color: #8b8ba7;
 }
-.modal .form .input {
+.modal .form .input-body-search {
   color: #99C63C;
   font-size: 0.9rem;
   background-color: transparent;
@@ -116,10 +132,10 @@ a:hover {
   padding-block: 0.7em;
   border: none;
 }
-.modal .form .input:focus {
+.modal .form .input-body-search:focus {
   outline: none;
 }
-.modal .form .input:not(:placeholder-shown) ~ .reset {
+.modal .form .input-body-search:not(:placeholder-shown) ~ .reset {
   opacity: 1;
   visibility: visible;
 }
@@ -132,6 +148,69 @@ a:hover {
 .modal .form i {
   width: 17px;
   margin-top: 3px;
+}
+
+.modal-register__bg .field-username {
+  margin-bottom: 10px;
+}
+.modal-register__bg .field-button {
+  gap: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.modal-register__bg .field-button .button-login,
+.modal-register__bg .field-button .button-reset {
+  padding: 7px 12px;
+}
+.modal-register__bg .field-button .button-login:hover,
+.modal-register__bg .field-button .button-reset:hover {
+  color: #fff;
+  background-color: #7878bd;
+  border-radius: 10px;
+}
+.modal-register__bg .card {
+  width: 75%;
+  height: 254px;
+  background: #F4F6FB;
+  border: 1px solid white;
+  box-shadow: 10px 10px 64px 0 rgba(180, 180, 207, 0.75);
+  -webkit-box-shadow: 10px 10px 64px 0 rgba(186, 186, 202, 0.75);
+  -moz-box-shadow: 10px 10px 64px 0 rgba(208, 208, 231, 0.75);
+}
+.modal-register__bg .form {
+  padding: 25px;
+}
+.modal-register__bg .card_header {
+  gap: 10px;
+}
+.modal-register__bg .card svg {
+  color: #7878bd;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+.modal-register__bg .form_heading {
+  padding-bottom: 20px;
+  font-size: 21px;
+  color: #7878bd;
+}
+.modal-register__bg .input {
+  border-radius: 5px;
+  background-color: #e9e9f7;
+  padding: 5px;
+  width: 100%;
+  color: #7a7ab3;
+  border: 1px solid #dadaf7;
+}
+.modal-register__bg .input:focus-visible {
+  outline: 1px solid #aeaed6;
+}
+.modal-register__bg .input::placeholder {
+  color: #bcbcdf;
+}
+.modal-register__bg label {
+  color: #B2BAC8;
+  font-size: 14px;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
