@@ -74,6 +74,9 @@ a:hover {
   color: #99C63C;
   transition: 0.5s;
 }
+.header__navigation {
+  background-color: #fff;
+}
 .header__navigation .nav-item:not(:first-child):not(:last-child) {
   margin-right: 30px;
 }

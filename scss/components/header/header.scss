@@ -50,6 +50,7 @@
 
   }
   &__navigation{
+    background-color: $fff;
     .nav-item{
 
       &:not(:first-child):not(:last-child){
