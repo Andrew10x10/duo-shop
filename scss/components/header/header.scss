@@ -1,4 +1,5 @@
 .header {
+  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
   &__top {
     background-color: $bg-page;
     padding: 5px 0;
@@ -31,8 +32,6 @@
 
   &__navigation {
     background-color: $fff;
-    box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
-
   }
   &__search-wrapper {
     margin-right: 65px;
@@ -70,6 +69,29 @@
     }
   }
 
+  .dropdown-menu{
+    border: none;
+  }
+  .hover:hover {
+    color: $accent-color;
+    transition: $transition;
+    &:active {
+      background-color: $accent-color;
+      color: $fff;
+    }
+  }
+  .dropdown-item {
+
+    &:hover {
+      border-radius: 10px;
+      box-shadow: 5px 5px 12px -2px $accent-color;
+    }
+
+    &:active {
+      background-color: $accent-color;
+      color: $fff;
+    }
+  }
 
 }
 .modal {
@@ -144,17 +166,16 @@
 }
 .modal-register{
   &__bg{
-    .field-username{
-      margin-bottom: 10px;
 
+    .field-username{
+      width: 70%;
+    }
+    .field-password{
+      width: 70%;
     }
     .field-button{
       gap: 10px;
-      //background-color: #7878bd;
       font-size: 14px;
-      //padding: 7px 12px;
-      //font-weight: 500;
-      //color: white;
       margin-top: 20px;
       .button-login,
       .button-reset{
@@ -177,7 +198,7 @@
       -moz-box-shadow: 10px 10px 64px 0 rgba(208, 208, 231, 0.75);
     }
     .form {
-      padding: 25px;
+      padding: 10px;
     }
     .card_header {
       gap: 10px;
@@ -206,7 +227,7 @@
     .input::placeholder {
       color: #bcbcdf;
     }
-    label {
+    .label {
       color: #B2BAC8;
       font-size: 14px;
       display: block;
@@ -215,4 +236,5 @@
       //padding-bottom: 4px;
     }
   }
+
 }

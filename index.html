@@ -83,7 +83,7 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link p-0 dropdown-toggle" href="#" role="button" id="productsDropdown"
+                            <a class="nav-link p-0 dropdown-toggle hover" href="#" role="button" id="productsDropdown"
                                data-bs-toggle="dropdown"
                                aria-expanded="false">
                                 Products
@@ -94,8 +94,8 @@
                                 <li><a class="dropdown-item" href="#">Products#3</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link p-0 dropdown-toggle" href="#" id="applicationsDropdown" role="button"
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link p-0 dropdown-toggle hover" href="#" id="applicationsDropdown" role="button"
                                data-bs-toggle="dropdown"
                                aria-expanded="false">
                                 Applications
@@ -106,8 +106,8 @@
                                 <li><a class="dropdown-item" href="#">Applications#3</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link p-0" href="#">
+                        <li class="nav-item">
+                            <a class="nav-link p-0 hover" href="#">
                                 Documentation
                             </a>
                         </li>
@@ -118,8 +118,7 @@
                            data-bs-target="#register-modal">
                             <i class="bi bi-person"></i>
                         </a>
-                        <a class="nav-link header__search p-0" href="#" data-bs-toggle="modal"
-                           data-bs-target="#search-modal">
+                        <a class="nav-link header__search p-0" data-bs-toggle="offcanvas" href="#cartSection" role="button" aria-controls="cartSection">
                             <i class="bi bi-cart2"></i>
                         </a>
                     </div>
@@ -160,11 +159,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
 <!-- Modal register -->
 <div class="modal fade modal-register" id="register-modal" data-bs-backdrop="static"
      data-bs-keyboard="false" tabindex="-1"
@@ -185,14 +179,17 @@
                                   d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"></path>
                         </svg>
                     </div>
+
                     <div class="field field-username">
                         <label for="username"></label>
                         <input class="input" name="username" type="text" placeholder="Username" id="username">
                     </div>
+
                     <div class="field field-password">
                         <label for="password"></label>
                         <input class="input" name="user_password" type="password" placeholder="Password" id="password">
                     </div>
+
                     <div class="field field-button d-flex">
                         <button class="button-login">Login</button>
                         <button class="button-reset" type="reset">Reset</button>
@@ -202,8 +199,28 @@
         </div>
     </div>
 </div>
-
-
+<!-- cart section -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSection" aria-labelledby="cartSectionLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartSectionLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            Your cart is empty
+        </div>
+        <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 

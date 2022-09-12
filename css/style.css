@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Lato";
-  src: local("Lato Bold"), local("Lato-Bold"), url("../Lato-Bold.woff2") format("woff2"), url("../Lato-Bold.woff") format("woff"), url("../Lato-Bold.ttf") format("truetype");
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: local("Lato Regular"), local("Lato-Regular"), url("../Lato-Regular.woff2") format("woff2"), url("../Lato-Regular.woff") format("woff"), url("../Lato-Regular.ttf") format("truetype");
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-size: 2px;
@@ -37,6 +37,9 @@ a:hover {
   transition: 0.5s;
 }
 
+.header {
+  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
+}
 .header__top {
   background-color: #E5E5E5;
   padding: 5px 0;
@@ -59,7 +62,6 @@ a:hover {
 }
 .header__navigation {
   background-color: #fff;
-  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
 }
 .header__search-wrapper {
   margin-right: 65px;
@@ -88,6 +90,25 @@ a:hover {
 }
 .header__auth i.bi-person {
   font-size: calc(16px * 1.09);
+}
+.header .dropdown-menu {
+  border: none;
+}
+.header .hover:hover {
+  color: #99C63C;
+  transition: 0.5s;
+}
+.header .hover:hover:active {
+  background-color: #99C63C;
+  color: #fff;
+}
+.header .dropdown-item:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px -2px #99C63C;
+}
+.header .dropdown-item:active {
+  background-color: #99C63C;
+  color: #fff;
 }
 
 .modal .form {
@@ -154,7 +175,10 @@ a:hover {
 }
 
 .modal-register__bg .field-username {
-  margin-bottom: 10px;
+  width: 70%;
+}
+.modal-register__bg .field-password {
+  width: 70%;
 }
 .modal-register__bg .field-button {
   gap: 10px;
@@ -181,7 +205,7 @@ a:hover {
   -moz-box-shadow: 10px 10px 64px 0 rgba(208, 208, 231, 0.75);
 }
 .modal-register__bg .form {
-  padding: 25px;
+  padding: 10px;
 }
 .modal-register__bg .card_header {
   gap: 10px;
@@ -210,7 +234,7 @@ a:hover {
 .modal-register__bg .input::placeholder {
   color: #bcbcdf;
 }
-.modal-register__bg label {
+.modal-register__bg .label {
   color: #B2BAC8;
   font-size: 14px;
   display: block;
