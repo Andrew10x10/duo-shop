@@ -1,0 +1,19 @@
+.way-product{
+  margin: 11px 0 37px;
+}
+
+.breadcrumb__gap{
+  gap: 42px;
+  
+}
+.breadcrumb-item+.breadcrumb-item::before{
+  position: absolute;
+  padding-right: 10px;
+  background-color: #BDBDBE;
+  content: '';
+  width: 26px;
+  height: 1px;
+  display: block;
+  top: 12px;
+  left: -30px;
+}

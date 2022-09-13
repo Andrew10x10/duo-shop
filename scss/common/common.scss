@@ -13,3 +13,13 @@ a {
     transition: $transition ;
   }
 }
+.pos-rel{
+  position: relative;
+}
+.accent-active{
+  color: $accent-color;
+  transition: $transition;
+  &:hover{
+    color: black;
+  }
+}

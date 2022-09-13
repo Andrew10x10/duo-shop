@@ -37,6 +37,18 @@ a:hover {
   transition: 0.5s;
 }
 
+.pos-rel {
+  position: relative;
+}
+
+.accent-active {
+  color: #99C63C;
+  transition: 0.5s;
+}
+.accent-active:hover {
+  color: black;
+}
+
 .header {
   box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
 }
@@ -111,6 +123,10 @@ a:hover {
   color: #fff;
 }
 
+.modal-body {
+  padding: 30px 10px;
+}
+
 .modal .form {
   box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
   position: relative;
@@ -174,12 +190,6 @@ a:hover {
   margin-top: 3px;
 }
 
-.modal-register__bg .field-username {
-  width: 70%;
-}
-.modal-register__bg .field-password {
-  width: 70%;
-}
 .modal-register__bg .field-button {
   gap: 10px;
   font-size: 14px;
@@ -205,7 +215,7 @@ a:hover {
   -moz-box-shadow: 10px 10px 64px 0 rgba(208, 208, 231, 0.75);
 }
 .modal-register__bg .form {
-  padding: 10px;
+  padding: 10px 25px;
 }
 .modal-register__bg .card_header {
   gap: 10px;
@@ -238,6 +248,53 @@ a:hover {
   color: #B2BAC8;
   font-size: 14px;
   display: block;
+}
+
+@media (max-width: 576px) {
+  .img-fluid {
+    width: 70%;
+  }
+  .navbar-brand {
+    margin-right: -70px;
+  }
+  .header__contact-ic,
+.header__lang-ic {
+    padding-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .img-fluid {
+    width: 60%;
+  }
+}
+.way-product {
+  margin: 11px 0 37px;
+}
+
+.breadcrumb__gap {
+  gap: 42px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  position: absolute;
+  padding-right: 10px;
+  background-color: #BDBDBE;
+  content: "";
+  width: 26px;
+  height: 1px;
+  display: block;
+  top: 12px;
+  left: -30px;
+}
+
+@media (max-width: 576px) {
+  .breadcrumb__gap {
+    gap: 30px;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    width: 22px;
+    left: -22px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
