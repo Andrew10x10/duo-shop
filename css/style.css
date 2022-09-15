@@ -49,6 +49,15 @@ a:hover {
   color: black;
 }
 
+.dropdown-item:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px -2px #99C63C;
+}
+.dropdown-item:active {
+  background-color: #99C63C;
+  color: #fff;
+}
+
 .header {
   box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
 }
@@ -56,6 +65,9 @@ a:hover {
   background-color: #E5E5E5;
   padding: 5px 0;
   font-size: 15px;
+}
+.header__top .item-phone {
+  font-size: 13px;
 }
 .header__contact-ic, .header__lang-ic {
   padding-right: 10px;
@@ -295,6 +307,101 @@ a:hover {
     width: 22px;
     left: -22px;
   }
+}
+.drop-and-search__form .input-body-search {
+  width: 90%;
+}
+.drop-and-search .wrapper-bg {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.drop-and-search__wrapper-button {
+  justify-content: space-evenly;
+  padding: 16px;
+}
+.drop-and-search__wrapper-button button {
+  border: none;
+  background: transparent;
+}
+.drop-and-search__wrapper-button .button-result {
+  color: #515151;
+  font-size: 12px;
+}
+.drop-and-search__wrapper-button .button-clear {
+  color: #EB5757;
+  font-size: 12px;
+}
+.drop-and-search__wrapper-button .button-clear i {
+  margin-right: 5px;
+}
+.drop-and-search .btn-secondary {
+  width: 100%;
+  padding: 16px 25px;
+  color: black;
+  background-color: #fff;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 4px 7px rgba(157, 157, 157, 0.1);
+}
+.drop-and-search .btn-secondary:hover {
+  background-color: #99C63C;
+  box-shadow: 4px 7px 3px rgba(157, 157, 157, 0.4);
+}
+.drop-and-search .btn-secondary:active {
+  background-color: #99C63C;
+}
+.drop-and-search .btn-secondary:focus {
+  background-color: #99C63C;
+  color: #fff;
+  border: #99C63C;
+}
+.drop-and-search .dropdown-toggle::after {
+  margin-left: 78px;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 16px;
+}
+
+.accordion-button:not(.collapsed) {
+  font-weight: 700;
+  font-size: 17px;
+  background-color: #fff;
+  line-height: 22px;
+  box-shadow: none;
+}
+
+.accordion-collapse {
+  position: relative;
+}
+
+.accordion-body:after {
+  position: absolute;
+  content: "";
+  display: block;
+  text-align: center;
+  width: 86%;
+  height: 1px;
+  left: 7%;
+  bottom: 0;
+  background: #E2E2E2;
+}
+
+.form-check-input {
+  width: 22px;
+  height: 22px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-check-label {
+  font-size: 15px;
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

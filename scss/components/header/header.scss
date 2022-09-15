@@ -4,6 +4,9 @@
     background-color: $bg-page;
     padding: 5px 0;
     font-size: $font-size-md;
+    .item-phone{
+      font-size: $font-size-sm;
+    }
   }
   &__contact-ic,
   &__lang-ic {
@@ -38,7 +41,7 @@
   }
   &__search {
     color: black;
-    font-size: $header-size-icon;
+    font-size: $font-size-normal;
     padding-right: 65px;
     padding-left: 0;
 
@@ -62,10 +65,10 @@
   &__auth{
     gap: 16px;
     i.bi-cart2{
-      font-size: $header-size-icon;
+      font-size: $font-size-normal;
     }
     i.bi-person{
-      font-size: calc(#{$header-size-icon} * 1.09);
+      font-size: calc(#{$font-size-normal} * 1.09);
     }
   }
 
@@ -171,12 +174,6 @@
 .modal-register{
   &__bg{
 
-    .field-username{
-      //width: 70%;
-    }
-    .field-password{
-      //width: 70%;
-    }
     .field-button{
       gap: 10px;
       font-size: 14px;
