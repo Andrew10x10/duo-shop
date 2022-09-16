@@ -308,8 +308,8 @@ a:hover {
     left: -22px;
   }
 }
-.drop-and-search__form .input-body-search {
-  width: 90%;
+.drop-and-search .drop {
+  margin-bottom: 30px;
 }
 .drop-and-search .wrapper-bg {
   background-color: #ffffff;
@@ -357,6 +357,31 @@ a:hover {
 }
 .drop-and-search .dropdown-toggle::after {
   margin-left: 78px;
+}
+.drop-and-search .item-filter {
+  font-size: 15px;
+  color: #BDBDBE;
+}
+.drop-and-search .search-second {
+  background: #fff;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+.drop-and-search .search-second__input {
+  margin: 16px 24px 16px 39px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.drop-and-search .search-second__button {
+  margin: 16px;
+  border: none;
+  background: transparent;
+}
+.drop-and-search .card-product {
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .accordion-item {

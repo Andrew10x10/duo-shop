@@ -1,8 +1,7 @@
+
 .drop-and-search {
-  &__form {
-    .input-body-search {
-      width: 90%;
-    }
+  .drop{
+    margin-bottom: 30px;
   }
   .wrapper-bg {
     background-color: #ffffff;
@@ -54,6 +53,34 @@
   .dropdown-toggle::after{
     margin-left: 78px;
   }
+  .item-filter{
+    font-size: $font-size-md;
+    color: #BDBDBE;
+  }
+
+
+  .search-second{
+    background: $fff;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    &__input{
+      margin: 16px 24px 16px 39px;
+      width: 100%;
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+    &__button{
+      margin: 16px;
+      border: none;
+      background: transparent;
+    }
+  }
+  .card-product{
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
 }
 .accordion-item{
   border: none;
