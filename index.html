@@ -141,53 +141,55 @@
             </nav>
         </div>
     </section>
-
-<!--    drop-and-search-->
     <section class="display-form">
         <div class="container">
             <div class="row d-flex">
-                <h2 class="col-12">Display Wall</h2>
-                <div class="col-3">
-                    <div class="dropdown drop">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            Display Wall
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                <h2 class="col-12 display-form__title">Display Wall</h2>
+                <div class="d-flex display-form__forms">
+
+                    <div class="col-3">
+                        <div class="dropdown display-form__dropdown">
+                            <button class="btn btn-secondary dropdown-toggle display-form__button" type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Display Wall
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-9">
-                    <div class="d-flex search-second">
-                        <label for="exampleDataList" class="form-label search-second__label"></label>
-                        <input class=" search-second__input" list="datalistOptions" id="exampleDataList"
-                               placeholder="Search">
-                        <datalist id="datalistOptions">
-                            <option value="product-1">
-                            <option value="product-2">
-                            <option value="product-3">
-                            <option value="product-4">
-                            <option value="product-5">
-                        </datalist>
-                        <button class="search-second__button">
-                            <i class="bi bi-search"></i>
-                        </button>
+                    <div class="col-9">
+                        <div class="display-form__search-margin">
+                            <div class="d-flex display-form__search-bg">
+                                <label for="exampleDataList" class="form-label display-form__label"></label>
+                                <input class=" display-form__input" list="datalistOptions" id="exampleDataList"
+                                       placeholder="Search">
+                                <datalist id="datalistOptions">
+                                    <option value="product-1">
+                                    <option value="product-2">
+                                    <option value="product-3">
+                                    <option value="product-4">
+                                    <option value="product-5">
+                                </datalist>
+                                <button class="display-form__button-search">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
     <section class="choice-product">
         <div class="container">
             <div class="row">
                 <aside class="col-3">
-                    <div class="wrapper-bg">
-                        <div class="d-flex drop-and-search__wrapper-button">
+                    <div class="choice-product__wrapper-bg">
+                        <div class="d-flex choice-product__wrapper-buttons">
                             <button class="button-result" type="button">
                                 <span>23 </span>Results
                             </button>
@@ -256,7 +258,7 @@
                                         Type
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingTwo">
                                     <div class="accordion-body">
                                         <div class="form-check">
@@ -293,7 +295,7 @@
                                         Features
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingThree">
                                     <div class="accordion-body">
                                         <div class="form-check">
@@ -343,7 +345,7 @@
                                         Features
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingFour">
                                     <div class="accordion-body">
                                         <div class="form-check">
@@ -394,7 +396,7 @@
                                         Height
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingFive">
                                     <div class="accordion-body">
                                         <div class="form-check">
@@ -429,7 +431,7 @@
                                         Form
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingSix">
                                     <div class="accordion-body">
                                         <div class="form-check">
@@ -457,7 +459,7 @@
                                         Price Range
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingSeven">
                                     <div class="accordion-body">
                                         <div class="form-check">
@@ -503,12 +505,12 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseEight">
-                                        Price Range
+                                        Set-up Time
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingEight">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body last-accordion">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="part-8.1"
                                                    checked>
@@ -546,112 +548,164 @@
                 </aside>
                 <div class="col-9">
                     <div class="card-product d-flex">
-                        <div class="card">
-                            <a href="#"><img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1"></a>
-                            <a href="#"><img src="/assets/img/new.svg" class="card-img-position" alt="new"></a>
+
+
+                        <div class="card card-1-1">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                            </div>
+                            <a href="#"><img src="/assets/img/new.svg" class="card-img-position " alt="new"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-1-2">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                            </div>
+                            <a href="#"><img src="/assets/img/best-seller.svg" class="card-img-position " alt="hot"></a>
+                            <a href="#"><img src="/assets/img/favorite.svg" class="card-img-position-2 " alt="hot"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-1-3">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-2-1">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                            </div>
+                            <a href="#"><img src="/assets/img/best-seller.svg" class="card-img-position " alt="hot"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-2-2">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-1.svg" class="card-img-tops" alt="product-1"></a>
+                                <a href="#"><img src="/assets/img/product-1.svg" class="card-img-tops" alt="product-1"></a>
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Contour 10x4</h5>
+                                <h5 class="card-title">Contour 8x8</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
-                            <div class="card-body">
-                                <h5 class="card-title">Contour 10x4</h5>
-                                <p class="card-text">8123,99 €</p>
+                        <div class="card card-2-3">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
                             </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
-                            <div class="card-body">
-                                <h5 class="card-title">Contour 10x4</h5>
-                                <p class="card-text">8123,99 €</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
-                            <div class="card-body">
-                                <h5 class="card-title">Contour 10x4</h5>
-                                <p class="card-text">8123,99 €</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
+                            <a href="#"><img src="/assets/img/new.svg" class="card-img-position " alt="new"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-3-1">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-3-2">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                            </div>
+                            <a href="#"><img src="/assets/img/best-seller.svg" class="card-img-position " alt="hot"></a>
+                            <a href="#"><img src="/assets/img/favorite.svg" class="card-img-position-2 " alt="hot"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
-                            <div class="card-body">
+                        <div class="card card-3-3">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                            </div>                            <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-4-1">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                            </div>                            <div class="card-body">
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
+                            </div>
+                        </div>
+                        <div class="card card-4-2">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                            </div>
+                            <a href="#"><img src="/assets/img/best-seller.svg" class="card-img-position " alt="hot"></a>
+                            <a href="#"><img src="/assets/img/favorite.svg" class="card-img-position-2 " alt="hot"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
+                        <div class="card card-4-3">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                            </div>                            <div class="card-body">
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-5-1">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                                <a href="#"><img src="/assets/img/product-1.svg" class="" alt="product-1"></a>
+                            </div>                            <div class="card-body">
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
+                            </div>
+                        </div>
+                        <div class="card card-5-2">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                                <a href="#"><img src="/assets/img/product-2.svg" class="" alt="product-2"></a>
+                            </div>
+                            <a href="#"><img src="/assets/img/best-seller.svg" class="card-img-position " alt="hot"></a>
+                            <a href="#"><img src="/assets/img/favorite.svg" class="card-img-position-2 " alt="hot"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
-                            <div class="card-body">
+                        <div class="card card-5-3">
+                            <div class="card-img-top d-flex">
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                                <a href="#"><img src="/assets/img/product-3.svg" class="" alt="product-3"></a>
+                            </div>                            <div class="card-body">
                                 <h5 class="card-title">Contour 10x4</h5>
                                 <p class="card-text">8123,99 €</p>
                             </div>

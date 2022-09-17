@@ -1,0 +1,130 @@
+.choice-product {
+  &__wrapper {
+    &-bg {
+      background-color: #ffffff;
+      border-radius: 16px;
+    }
+    &-buttons {
+      justify-content: space-evenly;
+      padding: 16px;
+
+      button {
+        border: none;
+        background: transparent;
+        font-size: $font-size-x-sm;
+
+      }
+
+      .button-result {
+        color: #515151;
+      }
+
+      .button-clear {
+        color: #EB5757;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .accordion-item {
+    border: none;
+    border-radius: 16px;
+  }
+  .accordion-button:not(.collapsed) {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-large;
+    background-color: $fff;
+    line-height: 22px;
+    box-shadow: none;
+  }
+  .accordion-collapse {
+    position: relative;
+  }
+  .accordion-body:after {
+    position: absolute;
+    content: '';
+    display: block;
+    text-align: center;
+    width: 86%;
+    height: 1px;
+    left: 7%;
+    bottom: 0;
+    background: #E2E2E2;
+  }
+  .last-accordion:after{
+    display: none;
+
+  }
+          //accordion-body
+  .form-check-input {
+    width: 22px;
+    height: 22px;
+  }
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .form-check-label {
+    font-size: $font-size-md;
+    line-height: 18px;
+  }
+          //choice-product card-product
+  .card-product {
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: end;
+    border: none;
+    //row-gap: 20px;
+    //column-gap: 57px;
+  }
+  .card {
+    max-width: 282px;
+    border-radius: 16px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+
+    &:hover{
+      transform: scale(1.02);
+      transition: $transition;
+      box-shadow: 0 8px 16px rgba(166, 206, 82, 0.42);
+    }
+    &:hover .card-body{
+      color: $accent-color;
+      transition: $transition;
+    }
+  }
+  .card-body {
+    text-align: center;
+    padding: 20px 0 25px 0;
+  }
+  .card-img {
+    //position: relative;
+  }
+  .card-img-position {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+  }
+  .card-img-position-2 {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+  }
+  .card-img-top:hover {
+       transform: translateX(-100%);
+       transition: 1s;
+     }
+
+}
+
+
+
+
+
+
+
