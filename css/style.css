@@ -280,11 +280,11 @@ a:hover {
   }
 }
 .way-product {
-  margin: 11px 0 37px;
+  padding: 11px 0 37px;
 }
-
-.breadcrumb__gap {
+.way-product__ol-gap {
   gap: 42px;
+  margin-bottom: 0;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -300,12 +300,20 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-  .breadcrumb__gap {
-    gap: 30px;
+  .way-product {
+    padding: 10px 0 20px;
+  }
+  .way-product__ol-gap {
+    column-gap: 25px;
   }
   .breadcrumb-item + .breadcrumb-item::before {
-    width: 22px;
-    left: -22px;
+    width: 20px;
+    left: -18px;
+  }
+}
+@media (max-width: 320px) {
+  .way-product__ol-gap {
+    gap: 19px;
   }
 }
 .drop-and-search .drop {
@@ -379,9 +387,25 @@ a:hover {
   border: none;
   background: transparent;
 }
+.drop-and-search .card {
+  border-radius: 16px;
+}
 .drop-and-search .card-product {
   flex-wrap: wrap;
-  gap: 14px;
+  row-gap: 20px;
+  column-gap: 57px;
+}
+.drop-and-search .card-body {
+  text-align: center;
+  padding: 20px 0 25px 0;
+}
+.drop-and-search .card-img {
+  position: relative;
+}
+.drop-and-search .card-img-position {
+  position: absolute;
+  top: 20px;
+  right: 15px;
 }
 
 .accordion-item {

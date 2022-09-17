@@ -127,23 +127,27 @@
         </nav>
     </div>
 </header>
+
+
 <main class="main">
-    <div class="container">
-        <section class="way-product">
+    <section class="way-product">
+        <div class="container">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb__gap">
+                <ol class="breadcrumb way-product__ol-gap">
                     <li class="breadcrumb-item pos-rel"><a class="accent-active" href="#">Products</a></li>
                     <li class="breadcrumb-item pos-rel"><a href="#">Display Wall</a></li>
                     <li class="breadcrumb-item pos-rel" aria-current="page"><a href="#">Products</a></li>
                 </ol>
             </nav>
-            <h2>Display Wall</h2>
-        </section>
+        </div>
+    </section>
 
-
-        <section class="drop-and-search">
-            <div class="row">
-                <aside class="col-3">
+<!--    drop-and-search-->
+    <section class="display-form">
+        <div class="container">
+            <div class="row d-flex">
+                <h2 class="col-12">Display Wall</h2>
+                <div class="col-3">
                     <div class="dropdown drop">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -155,6 +159,33 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-9">
+                    <div class="d-flex search-second">
+                        <label for="exampleDataList" class="form-label search-second__label"></label>
+                        <input class=" search-second__input" list="datalistOptions" id="exampleDataList"
+                               placeholder="Search">
+                        <datalist id="datalistOptions">
+                            <option value="product-1">
+                            <option value="product-2">
+                            <option value="product-3">
+                            <option value="product-4">
+                            <option value="product-5">
+                        </datalist>
+                        <button class="search-second__button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="choice-product">
+        <div class="container">
+            <div class="row">
+                <aside class="col-3">
                     <div class="wrapper-bg">
                         <div class="d-flex drop-and-search__wrapper-button">
                             <button class="button-result" type="button">
@@ -514,161 +545,124 @@
                     </div>
                 </aside>
                 <div class="col-9">
-                    <div class="d-flex search-second">
-                        <label for="exampleDataList" class="form-label search-second__label"></label>
-                        <input class=" search-second__input" list="datalistOptions" id="exampleDataList"
-                               placeholder="Search">
-                        <datalist id="datalistOptions">
-                            <option value="product-1">
-                            <option value="product-2">
-                            <option value="product-3">
-                            <option value="product-4">
-                            <option value="product-5">
-                        </datalist>
-                        <button class="search-second__button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                    <div class="d-flex card-product">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="card-product d-flex">
+                        <div class="card">
+                            <a href="#"><img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1"></a>
+                            <a href="#"><img src="/assets/img/new.svg" class="card-img-position" alt="new"></a>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
+                        </div>
 
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+
+                        <div class="card">
+                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+
+                        <div class="card">
+                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+
+                        <div class="card">
+                            <img src="/assets/img/product-1.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-2.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card">
+                            <img src="/assets/img/product-3.svg" class="card-img-top" alt="product-1">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Contour 10x4</h5>
+                                <p class="card-text">8123,99 €</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-    </div>
 </main>
 
 

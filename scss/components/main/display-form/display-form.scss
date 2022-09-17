@@ -1,4 +1,8 @@
 
+.display-form{
+
+
+}
 .drop-and-search {
   .drop{
     margin-bottom: 30px;
@@ -76,11 +80,27 @@
       background: transparent;
     }
   }
+  .card{
+    border-radius:  16px;
+  }
   .card-product{
     flex-wrap: wrap;
-    gap: 14px;
+    //gap: 14px;
+    row-gap: 20px;
+    column-gap: 57px;
   }
-
+  .card-body {
+    text-align: center;
+    padding: 20px 0 25px 0;
+  }
+  .card-img{
+    position: relative;
+  }
+  .card-img-position{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
 }
 .accordion-item{
   border: none;

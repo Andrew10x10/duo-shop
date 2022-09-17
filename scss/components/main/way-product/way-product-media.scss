@@ -1,0 +1,17 @@
+@media (max-width: 576px) {
+  .way-product{
+    padding: 10px 0 20px;
+    &__ol-gap{
+      column-gap: 25px;
+    }
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    width: 20px;
+    left: -18px;
+  }
+}
+@media (max-width: 320px) {
+  .way-product__ol-gap {
+    gap: 19px;
+  }
+}
