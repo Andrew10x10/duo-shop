@@ -1,0 +1,32 @@
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .choice-product {
+
+    &__media-button{
+      display: block;
+    }
+    &__media-none{
+      display: none;
+    }
+    .card-product {
+      transition: 1s;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  //  &__wrapper {
+  //    flex-direction: column;
+  //  }
+  //
+  //  .card-product {
+  //    justify-content: center;
+  //  }
+  //
+  //
+  //}
+
+
+}

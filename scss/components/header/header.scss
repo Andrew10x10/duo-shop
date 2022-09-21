@@ -51,6 +51,10 @@
     }
 
   }
+  &__ic-hover:hover{
+    border-radius: 3px;
+    background: $bg-page;
+  }
   &__navigation{
     background-color: $fff;
     .nav-item{

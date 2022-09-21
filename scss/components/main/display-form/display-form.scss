@@ -2,6 +2,12 @@
   margin-top: 10px;
   margin-bottom: 22px;
 
+  &__left{
+    width: 25%;
+  }
+  &__right{
+    width: 75%;
+  }
   &__title {
     font-weight: $font-weight-bold;
     font-size: 28px;
@@ -10,7 +16,11 @@
     margin-bottom: 37px;
   }
   &__forms {
-
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__wrapper-media{
+    flex-direction: row;
   }
   &__dropdown {
     margin-right:15px;
@@ -26,21 +36,21 @@
     background-color: $fff;
     border: none;
     border-radius: 40px;
-    //box-shadow: 0 4px 7px rgba(157, 157, 157, 0.1);
-    //
-    //&:hover {
-    //  background-color: $accent-color;
-    //  box-shadow: 4px 7px 3px rgb(157 157 157 / 40%);
-    //
-    //}
-    //&:active {
-    //  background-color: $accent-color;
-    //}
-    //&:focus {
-    //  background-color: $accent-color;
-    //  color: $fff;
-    //  border: $accent-color;
-    //}
+    box-shadow: 0 4px 7px rgba(157, 157, 157, 0.1);
+
+    &:hover {
+      background-color: $accent-color!important;
+      box-shadow: 4px 7px 3px rgb(157 157 157 / 40%);
+
+    }
+    &:active {
+      background-color: $accent-color;
+    }
+    &:focus {
+      background-color: $accent-color;
+      color: $fff;
+      border: $accent-color;
+    }
   }
 
   &__search {

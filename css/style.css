@@ -29,12 +29,6 @@ body {
   background-color: #E5E5E5;
 }
 
-.container {
-  width: 1265px;
-  padding: 0 41px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
 }
@@ -105,6 +99,10 @@ a:hover {
 .header__search:hover {
   color: #99C63C;
   transition: 0.5s;
+}
+.header__ic-hover:hover {
+  border-radius: 3px;
+  background: #E5E5E5;
 }
 .header__navigation {
   background-color: #fff;
@@ -326,12 +324,25 @@ a:hover {
   margin-top: 10px;
   margin-bottom: 22px;
 }
+.display-form__left {
+  width: 25%;
+}
+.display-form__right {
+  width: 75%;
+}
 .display-form__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 30px;
   color: #17181A;
   margin-bottom: 37px;
+}
+.display-form__forms {
+  flex-direction: column;
+  gap: 10px;
+}
+.display-form__wrapper-media {
+  flex-direction: row;
 }
 .display-form__dropdown {
   margin-right: 15px;
@@ -346,6 +357,19 @@ a:hover {
   background-color: #fff;
   border: none;
   border-radius: 40px;
+  box-shadow: 0 4px 7px rgba(157, 157, 157, 0.1);
+}
+.display-form__button:hover {
+  background-color: #99C63C !important;
+  box-shadow: 4px 7px 3px rgba(157, 157, 157, 0.4);
+}
+.display-form__button:active {
+  background-color: #99C63C;
+}
+.display-form__button:focus {
+  background-color: #99C63C;
+  color: #fff;
+  border: #99C63C;
 }
 .display-form__search-margin {
   margin-left: 15px;
@@ -372,6 +396,23 @@ a:hover {
   color: #BDBDBE;
 }
 
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1200px;
+  }
+  .display-form__dropdown .dropdown-toggle::after {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+  }
+  .display-form__wrapper-media {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .choice-product__wrapper-bg {
   background-color: #ffffff;
   border-radius: 16px;
@@ -393,6 +434,9 @@ a:hover {
 }
 .choice-product__wrapper-buttons .button-clear i {
   margin-right: 5px;
+}
+.choice-product__media-button {
+  display: none;
 }
 .choice-product .accordion-item {
   border: none;
@@ -437,9 +481,10 @@ a:hover {
 }
 .choice-product .card-product {
   flex-wrap: wrap;
-  gap: 13px;
   justify-content: end;
   border: none;
+  column-gap: 52px;
+  row-gap: 20px;
 }
 .choice-product .card {
   max-width: 282px;
@@ -447,6 +492,7 @@ a:hover {
   border: none;
   overflow: hidden;
   position: relative;
+  opacity: 1;
 }
 .choice-product .card:hover {
   transform: scale(1.02);
@@ -474,6 +520,23 @@ a:hover {
 .choice-product .card-img-top:hover {
   transform: translateX(-100%);
   transition: 1s;
+}
+
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1200px;
+  }
+  .choice-product__media-button {
+    display: block;
+  }
+  .choice-product__media-none {
+    display: none;
+  }
+  .choice-product .card-product {
+    transition: 1s;
+    justify-content: center;
+    gap: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

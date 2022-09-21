@@ -28,6 +28,12 @@
       }
     }
   }
+  &__media-button{
+    display: none;
+  }
+  &__media-none{
+    //display: none;
+  }
 
   .accordion-item {
     border: none;
@@ -75,18 +81,19 @@
           //choice-product card-product
   .card-product {
     flex-wrap: wrap;
-    gap: 13px;
     justify-content: end;
     border: none;
-    //row-gap: 20px;
-    //column-gap: 57px;
+    column-gap: 52px;
+    row-gap: 20px;
   }
   .card {
     max-width: 282px;
+    //max-height: 291px;
     border-radius: 16px;
     border: none;
     overflow: hidden;
     position: relative;
+    opacity: 1;
 
     &:hover{
       transform: scale(1.02);
@@ -115,8 +122,10 @@
     top: 45px;
     right: 15px;
   }
+
   .card-img-top:hover {
-       transform: translateX(-100%);
+    //transform: translateY(-50%);
+    transform: translateX(-100%);
        transition: 1s;
      }
 
