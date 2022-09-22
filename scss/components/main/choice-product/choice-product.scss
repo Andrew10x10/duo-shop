@@ -4,6 +4,7 @@
       background-color: #ffffff;
       border-radius: 16px;
     }
+
     &-buttons {
       justify-content: space-evenly;
       padding: 16px;
@@ -28,13 +29,9 @@
       }
     }
   }
-  &__media-button{
+  &__media-button {
     display: none;
   }
-  &__media-none{
-    //display: none;
-  }
-
   .accordion-item {
     border: none;
     border-radius: 16px;
@@ -60,11 +57,11 @@
     bottom: 0;
     background: #E2E2E2;
   }
-  .last-accordion:after{
+  .last-accordion:after {
     display: none;
 
   }
-          //accordion-body
+  //accordion-body
   .form-check-input {
     width: 22px;
     height: 22px;
@@ -78,7 +75,7 @@
     font-size: $font-size-md;
     line-height: 18px;
   }
-          //choice-product card-product
+  //choice-product card-product
   .card-product {
     flex-wrap: wrap;
     justify-content: end;
@@ -88,19 +85,19 @@
   }
   .card {
     max-width: 282px;
-    //max-height: 291px;
     border-radius: 16px;
     border: none;
     overflow: hidden;
     position: relative;
     opacity: 1;
 
-    &:hover{
+    &:hover {
       transform: scale(1.02);
       transition: $transition;
       box-shadow: 0 8px 16px rgba(166, 206, 82, 0.42);
     }
-    &:hover .card-body{
+
+    &:hover .card-body {
       color: $accent-color;
       transition: $transition;
     }
@@ -110,7 +107,6 @@
     padding: 20px 0 25px 0;
   }
   .card-img {
-    //position: relative;
   }
   .card-img-position {
     position: absolute;
@@ -122,12 +118,10 @@
     top: 45px;
     right: 15px;
   }
-
   .card-img-top:hover {
-    //transform: translateY(-50%);
     transform: translateX(-100%);
-       transition: 1s;
-     }
+    transition: 1s;
+  }
 
 }
 

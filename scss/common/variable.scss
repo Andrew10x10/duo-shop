@@ -5,6 +5,11 @@
   --bs-navbar-brand-margin-end: 45px;
   --bs-navbar-color: black;
 }
+.accordion{
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: $fff;
+}
+
 $font-family-main: 'Lato', sans-serif;
 
 $font-weight-regular: 400;

@@ -22,6 +22,11 @@
   --bs-navbar-color: black;
 }
 
+.accordion {
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: white;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -408,9 +413,28 @@ a:hover {
   .container {
     max-width: 576px;
   }
+  .accordion {
+    --bs-accordion-btn-padding-x: 15px;
+    --bs-accordion-btn-padding-y: 10px;
+  }
   .display-form__wrapper-media {
     flex-direction: column;
     gap: 10px;
+  }
+  .display-form__left {
+    width: 50%;
+  }
+  .display-form__search-bg {
+    height: 44px;
+  }
+  .display-form__button {
+    padding: 10px;
+  }
+  .display-form__search-margin {
+    margin: 0;
+  }
+  .display-form__button-search {
+    margin: 0 16px;
   }
 }
 .choice-product__wrapper-bg {
@@ -536,6 +560,22 @@ a:hover {
     transition: 1s;
     justify-content: center;
     gap: 15px;
+  }
+  .choice-product .card {
+    max-width: 282px;
+    max-height: 291px;
+  }
+  .choice-product .card img {
+    width: 100%;
+  }
+  .choice-product .card .card-img-position {
+    width: 15%;
+  }
+  .choice-product .card .card-img-position-2 {
+    width: 15%;
+  }
+  .choice-product .card .card-body {
+    padding: 10px 0;
   }
 }
 

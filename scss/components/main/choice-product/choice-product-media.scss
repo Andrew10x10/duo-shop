@@ -2,7 +2,6 @@
   .container {
     max-width: 1200px;
   }
-
   .choice-product {
 
     &__media-button{
@@ -16,17 +15,30 @@
       justify-content: center;
       gap: 15px;
     }
+    .card{
+        max-width: 282px;
+        max-height: 291px;
+
+      img{
+        width: 100%;
+      }
+      .card-img-position{
+        width: 15%;
+      }
+      .card-img-position-2{
+        width: 15%;
+      }
+      .card-body{
+        padding: 10px 0;
+      }
+    }
+
+
+
+
+
+
   }
-  //  &__wrapper {
-  //    flex-direction: column;
-  //  }
-  //
-  //  .card-product {
-  //    justify-content: center;
-  //  }
-  //
-  //
-  //}
 
 
 }
