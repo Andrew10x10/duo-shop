@@ -7,7 +7,7 @@
 }
 .accordion{
   --bs-accordion-active-color: black;
-  --bs-accordion-active-bg: $fff;
+  --bs-accordion-active-bg: white;
 }
 
 $font-family-main: 'Lato', sans-serif;
@@ -23,6 +23,8 @@ $font-size-x-sm: 12px;
 
 $black-color: #17181A;
 $bg-page: #E5E5E5;
+$bg-footer: #26282C;
 $accent-color: #99C63C;
+$footer-text-color: #BDBDBE;
 $fff: #fff;
 $transition: .5s;

@@ -23,6 +23,9 @@ a {
   }
 }
 
+.color-f{
+  color: white;
+}
 .dropdown-item {
 
   &:hover {
@@ -33,5 +36,12 @@ a {
   &:active {
     background-color: $accent-color;
     color: $fff;
+  }
+}
+.logo-shadow {
+  &:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgb(166 206 82 / 42%);
   }
 }

@@ -1,0 +1,131 @@
+.footer {
+  padding: 47px 0 22px;
+  background-color: $bg-footer;
+
+  a {
+    color: $footer-text-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &:active {
+      background-color: $accent-color;
+      color: $fff;
+    }
+  }
+  &__contacts {
+    font-size: $font-size-sm;
+    color: $footer-text-color;
+
+    &-color {
+      color: $footer-text-color;
+    }
+  }
+  &__img {
+    font-size: 18px;
+    color: $footer-text-color;
+    margin-right: 10px;
+  }
+  &__navigation {
+
+    &-title {
+      color: $fff;
+      font-size: $font-size-large;
+      font-weight: $font-weight-bold;
+      margin-bottom: 16px;
+
+      a {
+        color: white;
+      }
+    }
+
+    li {
+      a {
+        color: $footer-text-color;
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+
+    &-forms {
+      gap: 10px;
+
+      &-title {
+        margin-bottom: 13px;
+      }
+    }
+  }
+  &__form-email-input {
+    //width: 100%;
+    padding: 14px 29px 14px 46px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #515151;
+  }
+  &__form-email-send {
+    position: absolute;
+    border: none;
+    background: transparent;
+    top: 27%;
+    right: 15%;
+  }
+  .wrapper-dropdown {
+    border-radius: 30px;
+    border: 1px solid #515151;
+    margin-bottom: 28px;
+
+    .dropdown {
+      padding: 14px 29px 14px 46px;
+      text-align: center;
+    }
+
+    button {
+      i, span {
+        color: white;
+      }
+
+      &:hover {
+        color: $accent-color;
+      }
+
+      &:active {
+        background-color: $accent-color;
+        color: $fff;
+      }
+    }
+  }
+
+  .social-icons{
+    margin: 7px;
+    ul{
+      gap: 10px;
+      margin: 0;
+      a{
+        padding: 3px 7px 5px;
+        border-radius: 7px;
+      }
+    }
+    .social-bg{
+      &-non{
+        background: linear-gradient(167.84deg, #FF2C91 -55.34%, #921654 91.14%);
+      }
+      &-twi{
+        background: linear-gradient(167.84deg, #00C2FF -55.34%, #18718F 91.14%);
+      }
+      &-fac{
+        background: linear-gradient(167.84deg, #2C67FF -55.34%, #1D42A5 91.14%);
+      }
+      &-ins{
+        background: radial-gradient(132.53% 132.61% at 29.26% 107.77%, #FFD879 9.69%, #FCCB76 15.39%, #F5AA6C 25.83%, #E9755E 39.76%, #E45F58 44.9%, #D22A9C 67.86%, #6968DF 100%);;
+      }
+      &-lin{
+        background: linear-gradient(167.84deg, #0094FF -55.34%, #135C92 91.14%);
+      }
+      &-you{
+        background: linear-gradient(167.84deg, #FF2C2C -55.34%, #B12728 91.14%);
+      }
+    }
+  }
+}
