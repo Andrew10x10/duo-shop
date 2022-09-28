@@ -3,6 +3,9 @@
     max-width: 1300px;
   }
   .footer{
+    &__contacts{
+      gap: 10px;
+    }
     &__media{
       gap: 15px;
     }
@@ -18,10 +21,6 @@
       column-gap: 15px;
       justify-content: space-between
     }
-  //  &__media{
-  //    gap: 15px;
-  //    flex-direction: column;
-  //  }
   }
 }
 @media (max-width: 991px) {

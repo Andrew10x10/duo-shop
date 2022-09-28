@@ -24,6 +24,7 @@ ul {
 
 :root {
   --bs-link-color: black;
+  --bs-body-bg: #E5E5E5;
 }
 
 .navbar {
@@ -40,7 +41,6 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  background-color: #E5E5E5;
 }
 
 a {
@@ -80,6 +80,17 @@ a:hover {
   transform: scale(1.02);
   transition: 0.5s;
   box-shadow: 0 8px 16px rgba(166, 206, 82, 0.42);
+}
+
+.modal-register .modal-header {
+  border-bottom: none;
+}
+.modal-register .modal-content {
+  background-color: transparent;
+  border: none;
+}
+.modal-register .btn-close {
+  background: red url("/assets/img/x-lg.svg") center/2em auto no-repeat;
 }
 
 .header {
@@ -536,6 +547,7 @@ a:hover {
   overflow: hidden;
   position: relative;
   opacity: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 .choice-product .card:hover {
   transform: scale(1.02);
@@ -579,13 +591,6 @@ a:hover {
     transition: 1s;
     justify-content: center;
     gap: 15px;
-  }
-  .choice-product .card {
-    max-width: 282px;
-    max-height: 291px;
-  }
-  .choice-product .card img {
-    width: 100%;
   }
   .choice-product .card .card-img-position {
     width: 15%;
@@ -709,6 +714,9 @@ a:hover {
 @media (max-width: 1399px) {
   .container {
     max-width: 1300px;
+  }
+  .footer__contacts {
+    gap: 10px;
   }
   .footer__media {
     gap: 15px;

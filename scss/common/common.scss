@@ -2,8 +2,6 @@ body {
   font-family: $font-family-main;
   font-weight: $font-weight-regular;
   font-size: $font-size-md;
-  background-color: $bg-page;
-
 }
 a {
   text-decoration: none;
@@ -43,5 +41,18 @@ a {
     transform: scale(1.02);
     transition: 0.5s;
     box-shadow: 0 8px 16px rgb(166 206 82 / 42%);
+  }
+}
+.modal-register{
+  .modal-header{
+    border-bottom: none;
+  }
+  .modal-content{
+    background-color: transparent;
+    border: none;
+  }
+
+  .btn-close {
+    background: red url("/assets/img/x-lg.svg") center/2em auto no-repeat;
   }
 }
