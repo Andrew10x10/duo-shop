@@ -22,6 +22,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+}
+
 :root {
   --bs-link-color: black;
   --bs-body-bg: #E5E5E5;
@@ -91,6 +95,12 @@ a:hover {
 }
 .modal-register .btn-close {
   background: red url("/assets/img/x-lg.svg") center/2em auto no-repeat;
+}
+
+.d-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -603,8 +613,11 @@ a:hover {
   }
 }
 .footer {
-  padding: 47px 0 22px;
+  padding-top: 47px;
   background-color: #26282C;
+}
+.footer__media {
+  padding-bottom: 25px;
 }
 .footer a {
   color: #BDBDBE;
@@ -692,6 +705,10 @@ a:hover {
   padding: 3px 7px 5px;
   border-radius: 7px;
 }
+.footer .social-icons:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
 .footer .social-icons .social-bg-non {
   background: linear-gradient(167.84deg, #FF2C91 -55.34%, #921654 91.14%);
 }
@@ -709,6 +726,42 @@ a:hover {
 }
 .footer .social-icons .social-bg-you {
   background: linear-gradient(167.84deg, #FF2C2C -55.34%, #B12728 91.14%);
+}
+.footer .social-icons .social-bg-non:hover, .footer .social-icons .social-bg-twi:hover, .footer .social-icons .social-bg-fac:hover, .footer .social-icons .social-bg-ins:hover, .footer .social-icons .social-bg-lin:hover, .footer .social-icons .social-bg-you:hover {
+  transform: scale(1.3);
+  box-shadow: 0 8px 16px rgba(166, 206, 82, 0.42);
+}
+.footer .social-icons .social-bg-non:hover svg, .footer .social-icons .social-bg-non:hover path, .footer .social-icons .social-bg-twi:hover svg, .footer .social-icons .social-bg-twi:hover path, .footer .social-icons .social-bg-fac:hover svg, .footer .social-icons .social-bg-fac:hover path, .footer .social-icons .social-bg-ins:hover svg, .footer .social-icons .social-bg-ins:hover path, .footer .social-icons .social-bg-lin:hover svg, .footer .social-icons .social-bg-lin:hover path, .footer .social-icons .social-bg-you:hover svg, .footer .social-icons .social-bg-you:hover path {
+  fill: white;
+  fill-opacity: 1;
+}
+.footer__copyright-bg {
+  background: black;
+  color: #BDBDBE;
+  text-align: center;
+}
+.footer__copyright-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.footer .btn-down {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #99C63C;
+  color: white;
+}
+.footer .bi-arrow-up {
+  color: white;
+}
+.footer__copyright-bg:hover .bi-heart {
+  color: red;
+}
+.footer__copyright-bg:hover .bi-heart, .footer__copyright-bg:hover .btn-down {
+  transform: scale(1.4);
+  transition: 1s;
 }
 
 @media (max-width: 1399px) {

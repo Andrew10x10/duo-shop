@@ -56,3 +56,8 @@ a {
     background: red url("/assets/img/x-lg.svg") center/2em auto no-repeat;
   }
 }
+.d-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
