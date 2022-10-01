@@ -586,6 +586,38 @@ a:hover {
   transform: translateX(-100%);
   transition: 1s;
 }
+.choice-product .way-pages {
+  font-size: 17px;
+  gap: 14px;
+  margin: 35px 0 58px;
+}
+.choice-product .way-pages .forward, .choice-product .way-pages .backward {
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.choice-product .way-pages .backward {
+  background: gray;
+  margin-left: 15px;
+  border: 1px solid gray;
+}
+.choice-product .way-pages .page-navigation {
+  background: white;
+  border: 1px solid gray;
+  padding: 6px 30px;
+  border-radius: 30px;
+}
+.choice-product .way-pages .forward {
+  background: #99C63C;
+  border: 1px solid #99C63C;
+}
+.choice-product .form-select {
+  margin: 35px 0 58px;
+  padding: 8px 22px;
+  height: 40px;
+  width: 80px;
+  background-position: right 15px center;
+  border-radius: 30px;
+}
 
 @media (max-width: 1399px) {
   .container {

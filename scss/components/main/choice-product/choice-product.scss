@@ -123,6 +123,40 @@
     transform: translateX(-100%);
     transition: 1s;
   }
+  //way-pages
+  .way-pages{
+    font-size: $font-size-large;
+    gap: 14px;
+    margin: 35px 0 58px;
+    .forward,.backward{
+      padding: 10px 30px;
+      border-radius: 30px;
+    }
+    .backward{
+      background: gray;
+      margin-left: 15px;
+      border: 1px solid gray;
+    }
+    .page-navigation{
+      background: white;
+      border: 1px solid gray;
+      padding: 6px 30px;
+      border-radius: 30px;
+    }
+    .forward{
+      background: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
+  .form-select{
+    margin: 35px 0 58px;
+    padding: 8px 22px ;
+    height: 40px;
+    width: 80px;
+    background-position: right 15px center;
+    border-radius: 30px;
+
+  }
 
 }
 
