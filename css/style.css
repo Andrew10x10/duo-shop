@@ -643,6 +643,22 @@ a:hover {
   .choice-product .card .card-body {
     padding: 10px 0;
   }
+  .choice-product .way-pages {
+    margin: 20px auto 10px;
+    gap: 10px;
+  }
+  .choice-product .way-pages .backward {
+    margin-left: 0;
+  }
+  .choice-product .way-pages .forward, .choice-product .way-pages .backward {
+    padding: 5px;
+  }
+  .choice-product .way-pages .page-navigation {
+    padding: 5px 10px;
+  }
+  .choice-product .form-select {
+    margin: 5px auto;
+  }
 }
 .footer {
   padding-top: 47px;

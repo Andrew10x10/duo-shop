@@ -3,7 +3,6 @@
     max-width: 1200px;
   }
   .choice-product {
-
     &__media-button{
       display: block;
     }
@@ -25,6 +24,22 @@
       .card-body{
         padding: 10px 0;
       }
+    }
+    .way-pages{
+      margin: 20px auto 10px;
+      gap: 10px;
+      .backward{
+        margin-left: 0;
+      }
+      .forward,.backward{
+        padding: 5px;
+      }
+      .page-navigation{
+        padding: 5px 10px;
+      }
+    }
+    .form-select {
+      margin: 5px auto;
     }
   }
 }
